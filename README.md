@@ -38,7 +38,7 @@ Millio is a mobile cryptocurrency tracking application built with React Native a
 ## Prerequisites
 
 - Node.js (v18+)
-- bun
+- npm
 - Android Studio or Xcode (for emulators)
 
 ## Installation
@@ -51,31 +51,31 @@ cd millio-technical-test
 
 2. Install dependencies:
 ```bash
-bun install
+npm install
 ```
 
 ## Running the Application
 
 ### Development Mode
 ```bash
-bun start
+npm start
 ```
 
 ### Running on Specific Platforms
 
 - iOS Simulator: 
 ```bash
-bun start --ios
+npm start --ios
 ```
 
 - Android Emulator:
 ```bash
-bun start --android
+npm start --android
 ```
 
 - Web:
 ```bash
-bun start --web
+npm start --web
 ```
 
 ## Project Structure
