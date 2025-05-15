@@ -45,8 +45,8 @@ Millio is a mobile cryptocurrency tracking application built with React Native a
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/millio-technical-test.git
-cd millio-technical-test
+git clone https://github.com/TzzJokerzzT/currency-tracker.git
+cd currency-tracker
 ```
 
 2. Install dependencies:
