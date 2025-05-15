@@ -77,6 +77,10 @@ npm start --android
 ```bash
 npm start --web
 ```
+- Run Test
+```bash
+npm test
+```
 
 ## Project Structure
 
