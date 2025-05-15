@@ -81,5 +81,14 @@
     "react-test-renderer": "19.0.0",
     "typescript": "~5.8.3"
   },
-  "private": true
+  "private": true,
+  "jest": {
+  "preset": "jest-expo",
+  "transformIgnorePatterns": [
+    "node_modules/(?!(expo|react-native|@react-native|@expo|expo-modules-core)/)"
+  ],
+  "setupFilesAfterEnv": [
+    "@testing-library/jest-native/extend-expect"
+  ]
+}
 }
