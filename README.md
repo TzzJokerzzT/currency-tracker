@@ -1,50 +1,139 @@
-# Welcome to your Expo app 👋
+# Millio Cryptocurrency Tracker 📊🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+Millio is a mobile cryptocurrency tracking application built with React Native and Expo, providing real-time cryptocurrency market information and personal watchlist management.
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+- 🔍 Real-time cryptocurrency market data
+- 🌓 Dynamic light/dark theme support
+- 📱 Responsive mobile interface
+- 💹 Cryptocurrency price tracking
+- ⭐ Personal watchlist management
+- 🔄 Periodic data refresh
 
-2. Start the app
+## Technology Stack
 
-   ```bash
-   npx expo start
-   ```
+### Core Technologies
+- React Native
+- Expo
+- TypeScript
 
-In the output, you'll find options to open the app in a
+### State Management
+- Zustand
+- AsyncStorage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Data Fetching
+- TanStack Query
+- Coinlore API
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### UI Components
+- React Native UI Libraries
+- Tailwind CSS for React Native
 
-## Get a fresh project
+### Navigation
+- Expo Router
 
-When you're ready, run:
+## Prerequisites
 
+- Node.js (v18+)
+- bun
+- Android Studio or Xcode (for emulators)
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/millio-technical-test.git
+cd millio-technical-test
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
+```bash
+bun install
+```
 
-## Learn more
+## Running the Application
 
-To learn more about developing your project with Expo, look at the following resources:
+### Development Mode
+```bash
+bun start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Running on Specific Platforms
 
-## Join the community
+- iOS Simulator: 
+```bash
+bun start --ios
+```
 
-Join our community of developers creating universal apps.
+- Android Emulator:
+```bash
+bun start --android
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Web:
+```bash
+bun start --web
+```
+
+## Project Structure
+
+```
+millio-technical-test/
+│
+├── app/                # Main application screens
+├── components/         # Reusable UI components
+├── infrastructure/     # Core logic, hooks, adapters
+│   ├── api/            # API integration
+│   ├── hooks/          # Custom React hooks
+│   └── utils/          # Utility functions
+├── store/              # Global state management
+└── view/               # Page-specific components
+```
+
+## Key Components
+
+- `HomePage`: Displays cryptocurrency market list
+- `WatchListPage`: User's saved cryptocurrencies
+- `InformationPage`: Detailed cryptocurrency information
+- `UserPage`: User settings and theme toggle
+
+## API Integration
+
+The app uses the Coinlore API to fetch real-time cryptocurrency data. Data is adapted and transformed using custom adapters for consistent formatting.
+
+## State Management
+
+Zustand is used for global state management, with AsyncStorage for persistent storage of user preferences and watchlist.
+
+## Performance Optimization
+
+- Periodic data refresh (every 20 seconds)
+- Efficient data caching
+- Lightweight data transformations
+
+## Customization
+
+- Theme toggling (light/dark mode)
+- Watchlist management
+- Cryptocurrency tracking
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Alexis Buelvas - alexjesus-4856@hotmail.com
+
+Project Link: [https://github.com/yourusername/millio-technical-test](https://github.com/yourusername/millio-technical-test)
